@@ -1,6 +1,10 @@
+drop  database quan_li_sinh_vien;
 create database quan_li_sinh_vien;
 
+
 use quan_li_sinh_vien;
+
+
 
 create table class(
 	class_id int not null primary key auto_increment,
@@ -18,7 +22,7 @@ create table `student`(
     class_id int not null,
     foreign key (class_id) references class(class_id));
     
-    create table subject(
+    create table `subject`(
 		subject_id int not null primary key auto_increment,
         subject_name varchar(50) not null,
         credit tinyint not null default 1
@@ -29,7 +33,7 @@ create table `student`(
     mark_id int not null primary key auto_increment,
     subject_id int not null ,
     student_id int not null ,
-    mark float default 1 check (mark >=0 && mark <=100 ),
+    Mark float default 0 check (Mark between 0 and 100),
     exam_times tinyint default 1,
     unique (subject_id, student_id),
     foreign key (subject_id) references `subject` (subject_id),
