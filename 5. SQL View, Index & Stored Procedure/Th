@@ -1,0 +1,10 @@
+use classicmodels;
+
+DELIMITER //
+CREATE procedure getCusById (IN cusNum INT(11))
+BEGIN
+	select * from customers where customerNumber = cusNum;
+END // 
+DELIMITER ;    
+
+CALL GetCusById(12) ;
