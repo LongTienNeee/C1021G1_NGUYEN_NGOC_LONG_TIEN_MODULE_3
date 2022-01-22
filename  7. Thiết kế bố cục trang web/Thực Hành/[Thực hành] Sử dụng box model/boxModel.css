@@ -1,0 +1,12 @@
+.chamNgon {
+    padding: 10px;
+    border: #ba1f93 dotted 5px;
+}
+
+#chamNgonFukBoiz {
+    border-bottom: red solid 15px;
+    border-top: blue solid 15px;
+    border-left: yellow solid 15px;
+    border-right: peru solid 15px;
+    padding: 20px;
+}
