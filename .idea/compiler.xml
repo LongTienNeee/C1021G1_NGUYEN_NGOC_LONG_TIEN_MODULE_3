@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="[Thực_hành]_Tạo_trang_web_hiển_thị_thời_gian_hệ_thống" target="1.8" />
+      <module name="[Thực_hành]_Tạo_trang_web_hiển_thị_thời_gian_hệ_thống.main" target="1.8" />
+      <module name="[Thực_hành]_Tạo_trang_web_hiển_thị_thời_gian_hệ_thống.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
