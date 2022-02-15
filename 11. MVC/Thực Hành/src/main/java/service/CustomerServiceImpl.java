@@ -18,7 +18,6 @@ public class CustomerServiceImpl implements CustomerService{
         customers.put(3, new Customer(3, "Võ Thị Diễm My", "emgailaclong@gmail.com", "Sa Đéc"));
         customers.put(4, new Customer(4, "Nguyễn Sin", "anhhung123123@gmai.com", "Đồng Nai"));
         customers.put(5, new Customer(5, "Thông Soái", "ngaiTanEm@gmail.com", "Hải Phòng"));
-
     }
 
 

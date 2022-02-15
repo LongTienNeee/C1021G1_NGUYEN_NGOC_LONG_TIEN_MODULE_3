@@ -1,3 +1,5 @@
+package controller;
+
 import model.Calculator;
 
 import javax.servlet.*;
@@ -6,7 +8,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "CalculateServlet", urlPatterns = "/calculator")
+@WebServlet(name = "controller.CalculateServlet", urlPatterns = "/calculator")
 public class CalculateServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -15,7 +17,7 @@ public class CalculateServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        float firstO = Float.parseFloat(request.getParameter("fisrtOperand"));
+        float firstO = Float.parseFloat(request.getParameter("firstOperand"));
         float secondO = Float.parseFloat(request.getParameter("secondOperand"));
         char operator = request.getParameter("operator").charAt(0);
 
