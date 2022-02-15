@@ -21,7 +21,7 @@
     </tr>
     <tr>
       <td><label>Operator :</label></td>
-       <td><select name="operator" id="operatorư">
+       <td><select name="operator" id="operator">
               <option value="+">+</option>
               <option value="-">-</option>
               <option value="*">*</option>

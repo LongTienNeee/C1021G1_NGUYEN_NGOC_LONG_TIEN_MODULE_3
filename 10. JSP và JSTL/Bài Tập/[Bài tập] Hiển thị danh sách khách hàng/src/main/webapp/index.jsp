@@ -12,7 +12,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  <table>
+  <table BORDER="1px" >
     <th colspan="4">Danh sách khách hàng</th>
     <tr>
       <td><b>Tên</b></td>
@@ -23,9 +23,9 @@
 
     <c:forEach items="${customers}" var="dataCustomers">
       <tr>
-        <td><c:out value = "${dataCustomers.name}"></c:out></td>
-        <td><c:out  value = "${dataCustomers.dateOfBirth}"></c:out></td>
-        <td><c:out  value = "${dataCustomers.address}"></c:out></td>
+        <td><c:out value = "${dataCustomers.getName()}"></c:out></td>
+        <td><c:out  value = "${dataCustomers.getDateOfBirth()}"></c:out></td>
+        <td><c:out  value = "${dataCustomers.getAddress()}"></c:out></td>
         <td><img src="${dataCustomers.photo}"></td>
       </tr>
     </c:forEach>

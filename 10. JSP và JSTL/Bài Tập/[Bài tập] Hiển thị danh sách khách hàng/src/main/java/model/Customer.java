@@ -1,10 +1,10 @@
 package model;
 
 public class Customer {
-    String name;
-    String dateOfBirth;
-    String address;
-    String photo;
+    private String name;
+    private String dateOfBirth;
+    private String address;
+    private String photo;
 
     public Customer(String name, String dateOfBirth, String address, String photo) {
         this.name = name;
